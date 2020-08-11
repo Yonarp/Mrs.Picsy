@@ -4,6 +4,9 @@
     box-sizing: border-box;
 }
 
+
+/* --------FONTS ------------------ */
+
 @font-face {
     font-family: 'Ruhl';
     src: url(Fonts/FrankRuhlLibre-Regular.ttf);
@@ -19,6 +22,9 @@
     src: url(Fonts/GreatVibes-Regular.ttf);
 }
 
+
+/* -----------GENERAL ---------------------------------------------------- */
+
 html {
     font-size: 62.5%;
     --header-1: calc(2rem + 1vw);
@@ -30,7 +36,6 @@ html {
     --special-color: #906272;
     --background-color: #414141;
     --gray-text: #525252;
-    font-family: 'Poppins', sans-serif;
 }
 
 nav {
@@ -40,6 +45,7 @@ nav {
 
 h1 {
     font-size: var(--header-1);
+    font-family: 'Vibes', sans-serif;
 }
 
 h2 {
@@ -77,4 +83,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
+
+body {
+    font-family: 'Ruhl', sans-serif;
 }
