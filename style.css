@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    --header-1: calc(2rem + 1vw);
+    --header-2: calc(3.5rem + 1vw);
+    --header-3: calc(3rem + 1vw);
+    --header-4: calc(2.5rem + 1vw);
+    --text: calc(1.5rem + 1vw);
+    --big: calc(2.5rem + 1vw);
+    --special-color: #906272;
+    --background-color: #414141;
+    --gray-text: #525252;
+    font-family: 'Poppins', sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: var(--header-1);
+}
+
+h2 {
+    font-size: var(--header-2);
+}
+
+h3 {
+    font-size: var(--header-3);
+}
+
+h4,
+h5 {
+    font-size: var(--header-4);
+}
+
+li,
+button,
+label,
+input,
+p {
+    font-size: var(--text);
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
