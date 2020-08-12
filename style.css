@@ -114,6 +114,9 @@ nav {
     justify-content: space-around;
 }
 
+
+/* --------------------HERO-SECTION------------------------------------ */
+
 .hero {
     min-height: 90vh;
     width: 95%;
@@ -130,6 +133,7 @@ nav {
 
 .hero-introduction p {
     padding: 5rem 10rem;
+    color: var(--gray-text);
 }
 
 .hero-introduction h2 {
@@ -174,6 +178,85 @@ nav {
 .burger,
 .menu-checkbox {
     display: none;
+}
+
+
+/* ---------------------ABOUT-SECTION---------------------------------- */
+
+.about {
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    background: var(--background-color);
+    color: white;
+    flex: 2 1 40rem;
+    justify-content: space-around;
+}
+
+.about-text p {
+    font-size: calc((var(--text)/100)*80);
+}
+
+.about-text h3 {
+    font-family: 'Ruhl Medium';
+    padding: 2rem 0rem;
+}
+
+.about-text h2 {
+    font-family: 'Vibes';
+    padding: 4rem;
+}
+
+.about-text div {
+    padding: 3rem 8rem;
+}
+
+.about-image {
+    flex: 1 1 40rem;
+    position: relative;
+}
+
+.about-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.about-image h5 {
+    position: absolute;
+    left: 50%;
+    letter-spacing: 2rem;
+    color: white;
+    transform: translate(-50%, -50%);
+    top: 20%;
+}
+
+
+/* ------------------------------IMAGE-GALLERY-SECTION----------------------------------- */
+
+.gallery {
+    display: grid;
+    min-height: 100vh;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+}
+
+.gallery img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-1 {
+    grid-column: 1/3;
+}
+
+.gallery-2 {
+    grid-column: 3/4;
+    grid-row: 1/3;
 }
 
 
@@ -270,5 +353,22 @@ nav {
     }
     .menu-checkbox:checked~.burger span:nth-child(3) {
         transform: rotateZ(-45deg) translateY(-300%);
+    }
+    /*----------------------------------------------ABOUT SECTION------------------------------  */
+    .about-text div {
+        padding: 2rem 2rem;
+    }
+    .about-text p {
+        font-size: var(--text);
+    }
+    /* -----------------------------------------IMAGE-GALLERY--------------------------------- */
+    .gallery img {
+        grid-row: auto;
+        grid-column: auto;
+        object-position: inherit;
+        object-fit: cover;
+    }
+    .gallery {
+        grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
     }
 }
